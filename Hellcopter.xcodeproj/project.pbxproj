@@ -150,7 +150,7 @@
 		779EE3BD14A07F8400C84FE0 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				779EE40714A0C4F700C84FE0 /* Earth.jpg */,
+				779EE40914A0CA8900C84FE0 /* Textures */,
 				779EE3BE14A07F8400C84FE0 /* Hellcopter-Info.plist */,
 				779EE3BF14A07F8400C84FE0 /* InfoPlist.strings */,
 				779EE3C214A07F8400C84FE0 /* main.m */,
@@ -177,6 +177,14 @@
 				779EE3DC14A07F8400C84FE0 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		779EE40914A0CA8900C84FE0 /* Textures */ = {
+			isa = PBXGroup;
+			children = (
+				779EE40714A0C4F700C84FE0 /* Earth.jpg */,
+			);
+			name = Textures;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
