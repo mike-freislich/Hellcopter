@@ -11,12 +11,18 @@
 		779EE3C114A07F8400C84FE0 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 779EE3BF14A07F8400C84FE0 /* InfoPlist.strings */; };
 		779EE3C314A07F8400C84FE0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 779EE3C214A07F8400C84FE0 /* main.m */; };
 		779EE3C714A07F8400C84FE0 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 779EE3C514A07F8400C84FE0 /* Credits.rtf */; };
-		779EE3CA14A07F8400C84FE0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 779EE3C914A07F8400C84FE0 /* AppDelegate.m */; };
 		779EE3CD14A07F8400C84FE0 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 779EE3CB14A07F8400C84FE0 /* MainMenu.xib */; };
 		779EE3D514A07F8400C84FE0 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 779EE3D414A07F8400C84FE0 /* SenTestingKit.framework */; };
 		779EE3D614A07F8400C84FE0 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 779EE3B614A07F8400C84FE0 /* Cocoa.framework */; };
 		779EE3DE14A07F8400C84FE0 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 779EE3DC14A07F8400C84FE0 /* InfoPlist.strings */; };
 		779EE3E114A07F8400C84FE0 /* HellcopterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 779EE3E014A07F8400C84FE0 /* HellcopterTests.m */; };
+		779EE3F314A0BE9500C84FE0 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 779EE3F214A0BE9500C84FE0 /* OpenGL.framework */; };
+		779EE3FA14A0BEEF00C84FE0 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 779EE3F914A0BEEF00C84FE0 /* QuartzCore.framework */; };
+		779EE40314A0C4C600C84FE0 /* MainControler.m in Sources */ = {isa = PBXBuildFile; fileRef = 779EE3FC14A0C4C600C84FE0 /* MainControler.m */; };
+		779EE40414A0C4C600C84FE0 /* MyOpenGLView.m in Sources */ = {isa = PBXBuildFile; fileRef = 779EE3FE14A0C4C600C84FE0 /* MyOpenGLView.m */; };
+		779EE40514A0C4C600C84FE0 /* Scene.m in Sources */ = {isa = PBXBuildFile; fileRef = 779EE40014A0C4C600C84FE0 /* Scene.m */; };
+		779EE40614A0C4C600C84FE0 /* Texture.m in Sources */ = {isa = PBXBuildFile; fileRef = 779EE40214A0C4C600C84FE0 /* Texture.m */; };
+		779EE40814A0C4F700C84FE0 /* Earth.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 779EE40714A0C4F700C84FE0 /* Earth.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,8 +46,6 @@
 		779EE3C214A07F8400C84FE0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		779EE3C414A07F8400C84FE0 /* Hellcopter-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Hellcopter-Prefix.pch"; sourceTree = "<group>"; };
 		779EE3C614A07F8400C84FE0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
-		779EE3C814A07F8400C84FE0 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		779EE3C914A07F8400C84FE0 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		779EE3CC14A07F8400C84FE0 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		779EE3D314A07F8400C84FE0 /* HellcopterTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HellcopterTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		779EE3D414A07F8400C84FE0 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
@@ -49,6 +53,17 @@
 		779EE3DD14A07F8400C84FE0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		779EE3DF14A07F8400C84FE0 /* HellcopterTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HellcopterTests.h; sourceTree = "<group>"; };
 		779EE3E014A07F8400C84FE0 /* HellcopterTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HellcopterTests.m; sourceTree = "<group>"; };
+		779EE3F214A0BE9500C84FE0 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
+		779EE3F914A0BEEF00C84FE0 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		779EE3FB14A0C4C600C84FE0 /* MainController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainController.h; sourceTree = "<group>"; };
+		779EE3FC14A0C4C600C84FE0 /* MainControler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainControler.m; sourceTree = "<group>"; };
+		779EE3FD14A0C4C600C84FE0 /* MyOpenGLView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyOpenGLView.h; sourceTree = "<group>"; };
+		779EE3FE14A0C4C600C84FE0 /* MyOpenGLView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyOpenGLView.m; sourceTree = "<group>"; };
+		779EE3FF14A0C4C600C84FE0 /* Scene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Scene.h; sourceTree = "<group>"; };
+		779EE40014A0C4C600C84FE0 /* Scene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Scene.m; sourceTree = "<group>"; };
+		779EE40114A0C4C600C84FE0 /* Texture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Texture.h; sourceTree = "<group>"; };
+		779EE40214A0C4C600C84FE0 /* Texture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Texture.m; sourceTree = "<group>"; };
+		779EE40714A0C4F700C84FE0 /* Earth.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Earth.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +71,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				779EE3FA14A0BEEF00C84FE0 /* QuartzCore.framework in Frameworks */,
+				779EE3F314A0BE9500C84FE0 /* OpenGL.framework in Frameworks */,
 				779EE3B714A07F8400C84FE0 /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -95,6 +112,8 @@
 			isa = PBXGroup;
 			children = (
 				779EE3B614A07F8400C84FE0 /* Cocoa.framework */,
+				779EE3F214A0BE9500C84FE0 /* OpenGL.framework */,
+				779EE3F914A0BEEF00C84FE0 /* QuartzCore.framework */,
 				779EE3D414A07F8400C84FE0 /* SenTestingKit.framework */,
 				779EE3B814A07F8400C84FE0 /* Other Frameworks */,
 			);
@@ -114,8 +133,14 @@
 		779EE3BC14A07F8400C84FE0 /* Hellcopter */ = {
 			isa = PBXGroup;
 			children = (
-				779EE3C814A07F8400C84FE0 /* AppDelegate.h */,
-				779EE3C914A07F8400C84FE0 /* AppDelegate.m */,
+				779EE3FB14A0C4C600C84FE0 /* MainController.h */,
+				779EE3FC14A0C4C600C84FE0 /* MainControler.m */,
+				779EE3FD14A0C4C600C84FE0 /* MyOpenGLView.h */,
+				779EE3FE14A0C4C600C84FE0 /* MyOpenGLView.m */,
+				779EE3FF14A0C4C600C84FE0 /* Scene.h */,
+				779EE40014A0C4C600C84FE0 /* Scene.m */,
+				779EE40114A0C4C600C84FE0 /* Texture.h */,
+				779EE40214A0C4C600C84FE0 /* Texture.m */,
 				779EE3CB14A07F8400C84FE0 /* MainMenu.xib */,
 				779EE3BD14A07F8400C84FE0 /* Supporting Files */,
 			);
@@ -125,6 +150,7 @@
 		779EE3BD14A07F8400C84FE0 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				779EE40714A0C4F700C84FE0 /* Earth.jpg */,
 				779EE3BE14A07F8400C84FE0 /* Hellcopter-Info.plist */,
 				779EE3BF14A07F8400C84FE0 /* InfoPlist.strings */,
 				779EE3C214A07F8400C84FE0 /* main.m */,
@@ -227,6 +253,7 @@
 				779EE3C114A07F8400C84FE0 /* InfoPlist.strings in Resources */,
 				779EE3C714A07F8400C84FE0 /* Credits.rtf in Resources */,
 				779EE3CD14A07F8400C84FE0 /* MainMenu.xib in Resources */,
+				779EE40814A0C4F700C84FE0 /* Earth.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -262,7 +289,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				779EE3C314A07F8400C84FE0 /* main.m in Sources */,
-				779EE3CA14A07F8400C84FE0 /* AppDelegate.m in Sources */,
+				779EE40314A0C4C600C84FE0 /* MainControler.m in Sources */,
+				779EE40414A0C4C600C84FE0 /* MyOpenGLView.m in Sources */,
+				779EE40514A0C4C600C84FE0 /* Scene.m in Sources */,
+				779EE40614A0C4C600C84FE0 /* Texture.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -370,6 +400,7 @@
 		779EE3E514A07F8400C84FE0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Hellcopter/Hellcopter-Prefix.pch";
 				INFOPLIST_FILE = "Hellcopter/Hellcopter-Info.plist";
@@ -381,6 +412,7 @@
 		779EE3E614A07F8400C84FE0 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Hellcopter/Hellcopter-Prefix.pch";
 				INFOPLIST_FILE = "Hellcopter/Hellcopter-Info.plist";
@@ -436,6 +468,7 @@
 				779EE3E614A07F8400C84FE0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		779EE3E714A07F8400C84FE0 /* Build configuration list for PBXNativeTarget "HellcopterTests" */ = {
 			isa = XCConfigurationList;
@@ -444,6 +477,7 @@
 				779EE3E914A07F8400C84FE0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
