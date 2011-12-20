@@ -1,0 +1,451 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		779EE3B714A07F8400C84FE0 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 779EE3B614A07F8400C84FE0 /* Cocoa.framework */; };
+		779EE3C114A07F8400C84FE0 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 779EE3BF14A07F8400C84FE0 /* InfoPlist.strings */; };
+		779EE3C314A07F8400C84FE0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 779EE3C214A07F8400C84FE0 /* main.m */; };
+		779EE3C714A07F8400C84FE0 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 779EE3C514A07F8400C84FE0 /* Credits.rtf */; };
+		779EE3CA14A07F8400C84FE0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 779EE3C914A07F8400C84FE0 /* AppDelegate.m */; };
+		779EE3CD14A07F8400C84FE0 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 779EE3CB14A07F8400C84FE0 /* MainMenu.xib */; };
+		779EE3D514A07F8400C84FE0 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 779EE3D414A07F8400C84FE0 /* SenTestingKit.framework */; };
+		779EE3D614A07F8400C84FE0 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 779EE3B614A07F8400C84FE0 /* Cocoa.framework */; };
+		779EE3DE14A07F8400C84FE0 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 779EE3DC14A07F8400C84FE0 /* InfoPlist.strings */; };
+		779EE3E114A07F8400C84FE0 /* HellcopterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 779EE3E014A07F8400C84FE0 /* HellcopterTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		779EE3D714A07F8400C84FE0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 779EE3A914A07F8400C84FE0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 779EE3B114A07F8400C84FE0;
+			remoteInfo = Hellcopter;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		779EE3B214A07F8400C84FE0 /* Hellcopter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Hellcopter.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		779EE3B614A07F8400C84FE0 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		779EE3B914A07F8400C84FE0 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		779EE3BA14A07F8400C84FE0 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		779EE3BB14A07F8400C84FE0 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		779EE3BE14A07F8400C84FE0 /* Hellcopter-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Hellcopter-Info.plist"; sourceTree = "<group>"; };
+		779EE3C014A07F8400C84FE0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		779EE3C214A07F8400C84FE0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		779EE3C414A07F8400C84FE0 /* Hellcopter-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Hellcopter-Prefix.pch"; sourceTree = "<group>"; };
+		779EE3C614A07F8400C84FE0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		779EE3C814A07F8400C84FE0 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		779EE3C914A07F8400C84FE0 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		779EE3CC14A07F8400C84FE0 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		779EE3D314A07F8400C84FE0 /* HellcopterTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HellcopterTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		779EE3D414A07F8400C84FE0 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		779EE3DB14A07F8400C84FE0 /* HellcopterTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "HellcopterTests-Info.plist"; sourceTree = "<group>"; };
+		779EE3DD14A07F8400C84FE0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		779EE3DF14A07F8400C84FE0 /* HellcopterTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HellcopterTests.h; sourceTree = "<group>"; };
+		779EE3E014A07F8400C84FE0 /* HellcopterTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HellcopterTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		779EE3AF14A07F8400C84FE0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				779EE3B714A07F8400C84FE0 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		779EE3CF14A07F8400C84FE0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				779EE3D514A07F8400C84FE0 /* SenTestingKit.framework in Frameworks */,
+				779EE3D614A07F8400C84FE0 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		779EE3A714A07F8400C84FE0 = {
+			isa = PBXGroup;
+			children = (
+				779EE3BC14A07F8400C84FE0 /* Hellcopter */,
+				779EE3D914A07F8400C84FE0 /* HellcopterTests */,
+				779EE3B514A07F8400C84FE0 /* Frameworks */,
+				779EE3B314A07F8400C84FE0 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		779EE3B314A07F8400C84FE0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				779EE3B214A07F8400C84FE0 /* Hellcopter.app */,
+				779EE3D314A07F8400C84FE0 /* HellcopterTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		779EE3B514A07F8400C84FE0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				779EE3B614A07F8400C84FE0 /* Cocoa.framework */,
+				779EE3D414A07F8400C84FE0 /* SenTestingKit.framework */,
+				779EE3B814A07F8400C84FE0 /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		779EE3B814A07F8400C84FE0 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				779EE3B914A07F8400C84FE0 /* AppKit.framework */,
+				779EE3BA14A07F8400C84FE0 /* CoreData.framework */,
+				779EE3BB14A07F8400C84FE0 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		779EE3BC14A07F8400C84FE0 /* Hellcopter */ = {
+			isa = PBXGroup;
+			children = (
+				779EE3C814A07F8400C84FE0 /* AppDelegate.h */,
+				779EE3C914A07F8400C84FE0 /* AppDelegate.m */,
+				779EE3CB14A07F8400C84FE0 /* MainMenu.xib */,
+				779EE3BD14A07F8400C84FE0 /* Supporting Files */,
+			);
+			path = Hellcopter;
+			sourceTree = "<group>";
+		};
+		779EE3BD14A07F8400C84FE0 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				779EE3BE14A07F8400C84FE0 /* Hellcopter-Info.plist */,
+				779EE3BF14A07F8400C84FE0 /* InfoPlist.strings */,
+				779EE3C214A07F8400C84FE0 /* main.m */,
+				779EE3C414A07F8400C84FE0 /* Hellcopter-Prefix.pch */,
+				779EE3C514A07F8400C84FE0 /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		779EE3D914A07F8400C84FE0 /* HellcopterTests */ = {
+			isa = PBXGroup;
+			children = (
+				779EE3DF14A07F8400C84FE0 /* HellcopterTests.h */,
+				779EE3E014A07F8400C84FE0 /* HellcopterTests.m */,
+				779EE3DA14A07F8400C84FE0 /* Supporting Files */,
+			);
+			path = HellcopterTests;
+			sourceTree = "<group>";
+		};
+		779EE3DA14A07F8400C84FE0 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				779EE3DB14A07F8400C84FE0 /* HellcopterTests-Info.plist */,
+				779EE3DC14A07F8400C84FE0 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		779EE3B114A07F8400C84FE0 /* Hellcopter */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 779EE3E414A07F8400C84FE0 /* Build configuration list for PBXNativeTarget "Hellcopter" */;
+			buildPhases = (
+				779EE3AE14A07F8400C84FE0 /* Sources */,
+				779EE3AF14A07F8400C84FE0 /* Frameworks */,
+				779EE3B014A07F8400C84FE0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Hellcopter;
+			productName = Hellcopter;
+			productReference = 779EE3B214A07F8400C84FE0 /* Hellcopter.app */;
+			productType = "com.apple.product-type.application";
+		};
+		779EE3D214A07F8400C84FE0 /* HellcopterTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 779EE3E714A07F8400C84FE0 /* Build configuration list for PBXNativeTarget "HellcopterTests" */;
+			buildPhases = (
+				779EE3CE14A07F8400C84FE0 /* Sources */,
+				779EE3CF14A07F8400C84FE0 /* Frameworks */,
+				779EE3D014A07F8400C84FE0 /* Resources */,
+				779EE3D114A07F8400C84FE0 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				779EE3D814A07F8400C84FE0 /* PBXTargetDependency */,
+			);
+			name = HellcopterTests;
+			productName = HellcopterTests;
+			productReference = 779EE3D314A07F8400C84FE0 /* HellcopterTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		779EE3A914A07F8400C84FE0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+				ORGANIZATIONNAME = Clue;
+			};
+			buildConfigurationList = 779EE3AC14A07F8400C84FE0 /* Build configuration list for PBXProject "Hellcopter" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 779EE3A714A07F8400C84FE0;
+			productRefGroup = 779EE3B314A07F8400C84FE0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				779EE3B114A07F8400C84FE0 /* Hellcopter */,
+				779EE3D214A07F8400C84FE0 /* HellcopterTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		779EE3B014A07F8400C84FE0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				779EE3C114A07F8400C84FE0 /* InfoPlist.strings in Resources */,
+				779EE3C714A07F8400C84FE0 /* Credits.rtf in Resources */,
+				779EE3CD14A07F8400C84FE0 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		779EE3D014A07F8400C84FE0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				779EE3DE14A07F8400C84FE0 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		779EE3D114A07F8400C84FE0 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		779EE3AE14A07F8400C84FE0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				779EE3C314A07F8400C84FE0 /* main.m in Sources */,
+				779EE3CA14A07F8400C84FE0 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		779EE3CE14A07F8400C84FE0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				779EE3E114A07F8400C84FE0 /* HellcopterTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		779EE3D814A07F8400C84FE0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 779EE3B114A07F8400C84FE0 /* Hellcopter */;
+			targetProxy = 779EE3D714A07F8400C84FE0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		779EE3BF14A07F8400C84FE0 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				779EE3C014A07F8400C84FE0 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		779EE3C514A07F8400C84FE0 /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				779EE3C614A07F8400C84FE0 /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		779EE3CB14A07F8400C84FE0 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				779EE3CC14A07F8400C84FE0 /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+		779EE3DC14A07F8400C84FE0 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				779EE3DD14A07F8400C84FE0 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		779EE3E214A07F8400C84FE0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		779EE3E314A07F8400C84FE0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		779EE3E514A07F8400C84FE0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Hellcopter/Hellcopter-Prefix.pch";
+				INFOPLIST_FILE = "Hellcopter/Hellcopter-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		779EE3E614A07F8400C84FE0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Hellcopter/Hellcopter-Prefix.pch";
+				INFOPLIST_FILE = "Hellcopter/Hellcopter-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		779EE3E814A07F8400C84FE0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Hellcopter.app/Contents/MacOS/Hellcopter";
+				FRAMEWORK_SEARCH_PATHS = "$(DEVELOPER_LIBRARY_DIR)/Frameworks";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Hellcopter/Hellcopter-Prefix.pch";
+				INFOPLIST_FILE = "HellcopterTests/HellcopterTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		779EE3E914A07F8400C84FE0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Hellcopter.app/Contents/MacOS/Hellcopter";
+				FRAMEWORK_SEARCH_PATHS = "$(DEVELOPER_LIBRARY_DIR)/Frameworks";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Hellcopter/Hellcopter-Prefix.pch";
+				INFOPLIST_FILE = "HellcopterTests/HellcopterTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		779EE3AC14A07F8400C84FE0 /* Build configuration list for PBXProject "Hellcopter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				779EE3E214A07F8400C84FE0 /* Debug */,
+				779EE3E314A07F8400C84FE0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		779EE3E414A07F8400C84FE0 /* Build configuration list for PBXNativeTarget "Hellcopter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				779EE3E514A07F8400C84FE0 /* Debug */,
+				779EE3E614A07F8400C84FE0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		779EE3E714A07F8400C84FE0 /* Build configuration list for PBXNativeTarget "HellcopterTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				779EE3E814A07F8400C84FE0 /* Debug */,
+				779EE3E914A07F8400C84FE0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 779EE3A914A07F8400C84FE0 /* Project object */;
+}
