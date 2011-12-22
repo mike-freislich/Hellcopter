@@ -6,17 +6,24 @@
 
 #import <Cocoa/Cocoa.h>
 
+
 @class Texture;
 
+typedef enum {
+    SplashScreen,
+    MainMenu,
+    LevelIntro,
+    LevelInPlay,
+    LevelCompleted,
+    GamePaused
+} EnumGameMode;
+
+
 @interface Scene : NSObject {
-	
-	Texture *texture;
-	GLuint textureName;
-	
-    float animationPhase;
-    float rollAngle;
-    float sunAngle;
-    BOOL wireframe;
+
+    EnumGameMode gameMode;
+
+    float elapsed;
 }
 
 - (id)init;
@@ -25,14 +32,8 @@
 - (void)render;
 
 - (void)advanceTimeBy:(float)seconds;
-- (void)setAnimationPhase:(float)newAnimationPhase;
 
-- (float)rollAngle;
-- (void)setRollAngle:(float)newRollAngle;
+- (void)setGameMode:(EnumGameMode)newGameMode;
 
-- (float)sunAngle;
-- (void)setSunAngle:(float)newSunAngle;
-
-- (void)toggleWireframe;
 
 @end

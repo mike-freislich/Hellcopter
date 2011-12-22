@@ -298,13 +298,32 @@
             else
                 [self goFullScreen:nil];
             break;
-            
-		// [W] toggles wireframe rendering
-        case 'w':
-        case 'W':
-            [scene toggleWireframe];
-            break;
 			
+            
+        case '1':
+            [scene setGameMode:SplashScreen];
+            break;
+            
+        case '2':
+            [scene setGameMode:MainMenu];
+            break;
+            
+        case '3':
+            [scene setGameMode:LevelIntro];
+            break;
+            
+        case '4':
+            [scene setGameMode:LevelInPlay];
+            break;
+            
+        case '5':
+            [scene setGameMode:LevelCompleted];
+            break;
+            
+        case '6':
+            [scene setGameMode:GamePaused];
+            break;
+            
         default:
             break;
     }
@@ -336,8 +355,6 @@
             case NSLeftMouseDragged:
                 dx = windowPoint.x - lastWindowPoint.x;
                 dy = windowPoint.y - lastWindowPoint.y;
-                [scene setSunAngle:[scene sunAngle] - 1.0 * dx];
-                [scene setRollAngle:[scene rollAngle] - 0.5 * dy];
                 lastWindowPoint = windowPoint;
 				
 				if (isInFullScreenMode) {
