@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		777152EB14A32DDF008C0025 /* Sprite.m in Sources */ = {isa = PBXBuildFile; fileRef = 777152EA14A32DDF008C0025 /* Sprite.m */; };
 		779EE3B714A07F8400C84FE0 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 779EE3B614A07F8400C84FE0 /* Cocoa.framework */; };
 		779EE3C114A07F8400C84FE0 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 779EE3BF14A07F8400C84FE0 /* InfoPlist.strings */; };
 		779EE3C314A07F8400C84FE0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 779EE3C214A07F8400C84FE0 /* main.m */; };
@@ -36,6 +37,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		777152E914A32DDF008C0025 /* Sprite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Sprite.h; sourceTree = "<group>"; };
+		777152EA14A32DDF008C0025 /* Sprite.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Sprite.m; sourceTree = "<group>"; };
 		779EE3B214A07F8400C84FE0 /* Hellcopter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Hellcopter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		779EE3B614A07F8400C84FE0 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		779EE3B914A07F8400C84FE0 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -142,6 +145,8 @@
 				779EE40114A0C4C600C84FE0 /* Texture.h */,
 				779EE40214A0C4C600C84FE0 /* Texture.m */,
 				779EE3CB14A07F8400C84FE0 /* MainMenu.xib */,
+				777152E914A32DDF008C0025 /* Sprite.h */,
+				777152EA14A32DDF008C0025 /* Sprite.m */,
 				779EE3BD14A07F8400C84FE0 /* Supporting Files */,
 			);
 			path = Hellcopter;
@@ -301,6 +306,7 @@
 				779EE40414A0C4C600C84FE0 /* MyOpenGLView.m in Sources */,
 				779EE40514A0C4C600C84FE0 /* Scene.m in Sources */,
 				779EE40614A0C4C600C84FE0 /* Texture.m in Sources */,
+				777152EB14A32DDF008C0025 /* Sprite.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
