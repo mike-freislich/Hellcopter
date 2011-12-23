@@ -24,6 +24,8 @@
 		779EE40514A0C4C600C84FE0 /* Scene.m in Sources */ = {isa = PBXBuildFile; fileRef = 779EE40014A0C4C600C84FE0 /* Scene.m */; };
 		779EE40614A0C4C600C84FE0 /* Texture.m in Sources */ = {isa = PBXBuildFile; fileRef = 779EE40214A0C4C600C84FE0 /* Texture.m */; };
 		779EE40814A0C4F700C84FE0 /* Earth.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 779EE40714A0C4F700C84FE0 /* Earth.jpg */; };
+		77A82A1014A4C0BE00960B01 /* Entity3d.m in Sources */ = {isa = PBXBuildFile; fileRef = 77A82A0F14A4C0BE00960B01 /* Entity3d.m */; };
+		77A82A1414A4C8F800960B01 /* GameEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = 77A82A1314A4C8F800960B01 /* GameEngine.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +69,12 @@
 		779EE40114A0C4C600C84FE0 /* Texture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Texture.h; sourceTree = "<group>"; };
 		779EE40214A0C4C600C84FE0 /* Texture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Texture.m; sourceTree = "<group>"; };
 		779EE40714A0C4F700C84FE0 /* Earth.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Earth.jpg; sourceTree = "<group>"; };
+		77A82A0B14A4BE0400960B01 /* HellcopterTypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HellcopterTypes.h; sourceTree = "<group>"; };
+		77A82A0E14A4C0BE00960B01 /* Entity3d.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Entity3d.h; sourceTree = "<group>"; };
+		77A82A0F14A4C0BE00960B01 /* Entity3d.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Entity3d.m; sourceTree = "<group>"; };
+		77A82A1114A4C42F00960B01 /* IPhysics.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IPhysics.h; sourceTree = "<group>"; };
+		77A82A1214A4C8F800960B01 /* GameEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameEngine.h; sourceTree = "<group>"; };
+		77A82A1314A4C8F800960B01 /* GameEngine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameEngine.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -136,6 +144,7 @@
 		779EE3BC14A07F8400C84FE0 /* Hellcopter */ = {
 			isa = PBXGroup;
 			children = (
+				77A82A0814A4BAEF00960B01 /* Entities */,
 				779EE3FB14A0C4C600C84FE0 /* MainController.h */,
 				779EE3FC14A0C4C600C84FE0 /* MainControler.m */,
 				779EE3FD14A0C4C600C84FE0 /* MyOpenGLView.h */,
@@ -148,6 +157,10 @@
 				777152E914A32DDF008C0025 /* Sprite.h */,
 				777152EA14A32DDF008C0025 /* Sprite.m */,
 				779EE3BD14A07F8400C84FE0 /* Supporting Files */,
+				77A82A0B14A4BE0400960B01 /* HellcopterTypes.h */,
+				77A82A1114A4C42F00960B01 /* IPhysics.h */,
+				77A82A1214A4C8F800960B01 /* GameEngine.h */,
+				77A82A1314A4C8F800960B01 /* GameEngine.m */,
 			);
 			path = Hellcopter;
 			sourceTree = "<group>";
@@ -190,6 +203,15 @@
 				779EE40714A0C4F700C84FE0 /* Earth.jpg */,
 			);
 			name = Textures;
+			sourceTree = "<group>";
+		};
+		77A82A0814A4BAEF00960B01 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				77A82A0E14A4C0BE00960B01 /* Entity3d.h */,
+				77A82A0F14A4C0BE00960B01 /* Entity3d.m */,
+			);
+			name = Entities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -307,6 +329,8 @@
 				779EE40514A0C4C600C84FE0 /* Scene.m in Sources */,
 				779EE40614A0C4C600C84FE0 /* Texture.m in Sources */,
 				777152EB14A32DDF008C0025 /* Sprite.m in Sources */,
+				77A82A1014A4C0BE00960B01 /* Entity3d.m in Sources */,
+				77A82A1414A4C8F800960B01 /* GameEngine.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
