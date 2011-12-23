@@ -11,4 +11,14 @@
 
 @implementation Sprite
 
+- (id) init
+{
+    return nil;
+}
+
+- (void) initWithTexture:(NSString*) path
+{
+}
+
+
 @end
