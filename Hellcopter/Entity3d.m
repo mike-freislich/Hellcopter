@@ -22,7 +22,14 @@
 
 -(void) DoPhysics: (double) elapsed
 {
-        
+}
+
+-(void) DoAI: (double) elapsed
+{
+}
+
+-(void) Draw
+{
 }
 
 @end

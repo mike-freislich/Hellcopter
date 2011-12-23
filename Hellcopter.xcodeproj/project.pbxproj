@@ -144,6 +144,7 @@
 		779EE3BC14A07F8400C84FE0 /* Hellcopter */ = {
 			isa = PBXGroup;
 			children = (
+				77A82A1514A4CBD200960B01 /* Engine */,
 				77A82A0814A4BAEF00960B01 /* Entities */,
 				779EE3FB14A0C4C600C84FE0 /* MainController.h */,
 				779EE3FC14A0C4C600C84FE0 /* MainControler.m */,
@@ -158,9 +159,6 @@
 				777152EA14A32DDF008C0025 /* Sprite.m */,
 				779EE3BD14A07F8400C84FE0 /* Supporting Files */,
 				77A82A0B14A4BE0400960B01 /* HellcopterTypes.h */,
-				77A82A1114A4C42F00960B01 /* IPhysics.h */,
-				77A82A1214A4C8F800960B01 /* GameEngine.h */,
-				77A82A1314A4C8F800960B01 /* GameEngine.m */,
 			);
 			path = Hellcopter;
 			sourceTree = "<group>";
@@ -212,6 +210,16 @@
 				77A82A0F14A4C0BE00960B01 /* Entity3d.m */,
 			);
 			name = Entities;
+			sourceTree = "<group>";
+		};
+		77A82A1514A4CBD200960B01 /* Engine */ = {
+			isa = PBXGroup;
+			children = (
+				77A82A1114A4C42F00960B01 /* IPhysics.h */,
+				77A82A1214A4C8F800960B01 /* GameEngine.h */,
+				77A82A1314A4C8F800960B01 /* GameEngine.m */,
+			);
+			name = Engine;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

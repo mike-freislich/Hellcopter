@@ -15,5 +15,8 @@
 
 }
 
-    
+-(void) Draw;
+-(void) DoAI: (double) elapsed;
+
+
 @end
