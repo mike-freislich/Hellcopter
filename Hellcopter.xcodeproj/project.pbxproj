@@ -155,8 +155,6 @@
 				779EE40114A0C4C600C84FE0 /* Texture.h */,
 				779EE40214A0C4C600C84FE0 /* Texture.m */,
 				779EE3CB14A07F8400C84FE0 /* MainMenu.xib */,
-				777152E914A32DDF008C0025 /* Sprite.h */,
-				777152EA14A32DDF008C0025 /* Sprite.m */,
 				779EE3BD14A07F8400C84FE0 /* Supporting Files */,
 				77A82A0B14A4BE0400960B01 /* HellcopterTypes.h */,
 			);
@@ -215,6 +213,8 @@
 		77A82A1514A4CBD200960B01 /* Engine */ = {
 			isa = PBXGroup;
 			children = (
+				777152E914A32DDF008C0025 /* Sprite.h */,
+				777152EA14A32DDF008C0025 /* Sprite.m */,
 				77A82A1114A4C42F00960B01 /* IPhysics.h */,
 				77A82A1214A4C8F800960B01 /* GameEngine.h */,
 				77A82A1314A4C8F800960B01 /* GameEngine.m */,

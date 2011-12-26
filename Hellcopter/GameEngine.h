@@ -9,9 +9,22 @@
 #import <Foundation/Foundation.h>
 #import "Entity3d.h"
 
-@interface GameEngine : NSObject{
+typedef enum {
+    gmSplashScreen,
+    gmMainMenu,
+    gmLevelIntro,
+    gmLevelInPlay,
+    gmLevelCompleted,
+    gmGamePaused
+} EnumGameMode;
 
+@interface GameEngine : NSObject{;
+    //EnumGameMode gameMode;
 }
 
+@property EnumGameMode gameMode;
+//-(void) setGameMode:(EnumGameMode)gameMode;
+
+-(void) render;
 
 @end

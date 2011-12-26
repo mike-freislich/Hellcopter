@@ -301,27 +301,27 @@
 			
             
         case '1':
-            [scene setGameMode:SplashScreen];
+            scene.gameEngine.gameMode = gmSplashScreen;
             break;
             
         case '2':
-            [scene setGameMode:MainMenu];
+           scene.gameEngine.gameMode = gmMainMenu;
             break;
             
         case '3':
-            [scene setGameMode:LevelIntro];
+            scene.gameEngine.gameMode = gmLevelIntro;
             break;
             
         case '4':
-            [scene setGameMode:LevelInPlay];
+            scene.gameEngine.gameMode = gmLevelInPlay;
             break;
             
         case '5':
-            [scene setGameMode:LevelCompleted];
+            scene.gameEngine.gameMode = gmLevelCompleted;
             break;
             
         case '6':
-            [scene setGameMode:GamePaused];
+            scene.gameEngine.gameMode = gmGamePaused;    
             break;
             
         default:

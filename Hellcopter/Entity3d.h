@@ -18,5 +18,9 @@
 -(void) Draw;
 -(void) DoAI: (double) elapsed;
 
+-(void) setPosition: (float) x: (float) y: (float)z;
+-(void) Move: (float) x: (float) y: (float)z;
+-(void) setRotation: (float) angleX: (float) angleY: (float) angleZ;
+
 
 @end

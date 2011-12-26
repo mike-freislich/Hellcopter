@@ -5,24 +5,15 @@
 */
 
 #import <Cocoa/Cocoa.h>
+#import "GameEngine.h"
 
 
 @class Texture;
 
-typedef enum {
-    SplashScreen,
-    MainMenu,
-    LevelIntro,
-    LevelInPlay,
-    LevelCompleted,
-    GamePaused
-} EnumGameMode;
 
 
-@interface Scene : NSObject {
 
-    EnumGameMode gameMode;
-
+@interface Scene : NSObject {    
     float elapsed;
 }
 
@@ -33,7 +24,6 @@ typedef enum {
 
 - (void)advanceTimeBy:(float)seconds;
 
-- (void)setGameMode:(EnumGameMode)newGameMode;
-
+- (GameEngine *)gameEngine;
 
 @end
