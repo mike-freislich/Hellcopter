@@ -35,9 +35,7 @@ float maxVelocity;
 
 -(void) DoAI: (double) elapsed
 {
-    float degPerSec = 60; 
-    
-    [self rotateBy:degPerSec * elapsed :0.0f :0.0f];
+
 }
 
 -(void) Draw

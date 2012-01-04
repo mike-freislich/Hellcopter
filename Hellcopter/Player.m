@@ -29,6 +29,9 @@
 -(void) DoAI: (double) elapsed
 {
     [super DoAI:elapsed];
+
+    float degPerSec = 30; 
+    [self rotateBy:degPerSec * elapsed :0.0f :0.0f];
 }
 
 -(void) DoPhysics: (double) elapsed
