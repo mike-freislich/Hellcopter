@@ -22,7 +22,7 @@
 - (void)setViewportRect:(NSRect)bounds;
 - (void)render;
 
-- (void)advanceTimeBy:(float)seconds;
+- (void)advanceTimeBy:(double)seconds;
 
 - (GameEngine *)gameEngine;
 

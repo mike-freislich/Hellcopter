@@ -13,8 +13,8 @@
 @implementation Entity3d
 
 float maxVelocity;
-struct Vector3f position;
-struct Vector3f rotation;
+@synthesize position;
+@synthesize rotation;
 
 - (id)init {
     self = [super init];
@@ -23,7 +23,7 @@ struct Vector3f rotation;
         rotation.y = 0;
         rotation.z = 0;
         
-        [self setPosition:0 :0 :0];
+        [self setPosition:0.0f :0.0f :-3.0f];
     }
     return self;
 }
@@ -35,16 +35,14 @@ struct Vector3f rotation;
 
 -(void) DoAI: (double) elapsed
 {
+    float degPerSec = 60; 
+    
+    [self rotateBy:degPerSec * elapsed :0.0f :0.0f];
 }
 
 -(void) Draw
 {
-    glLoadIdentity();
-    glTranslatef(position.x, position.y, position.z);
-    glRotatef(rotation.x, 1.0, 0.0, 0.0);
-    glRotatef(rotation.y, 0.0, 1.0, 0.0);
-    glRotatef(rotation.z, 0.0, 0.0, 1.0);
-    
+
 }
 
 -(void) Move: (float) x: (float) y: (float)z
@@ -66,6 +64,13 @@ struct Vector3f rotation;
     rotation.x = angleX;
     rotation.y = angleY;
     rotation.z = angleZ;
+}
+
+-(void) rotateBy: (float) angleX: (float) angleY: (float) angleZ
+{
+    rotation.x += angleX;
+    rotation.y += angleY;
+    rotation.z += angleZ;
 }
 
 @end

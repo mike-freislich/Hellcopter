@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "Entity3d.h"
+#import "Player.h"
 
 typedef enum {
     gmSplashScreen,
@@ -18,13 +18,16 @@ typedef enum {
     gmGamePaused
 } EnumGameMode;
 
-@interface GameEngine : NSObject{;
-    //EnumGameMode gameMode;
+@interface GameEngine : NSObject{
 }
 
+@property double elapsed;
 @property EnumGameMode gameMode;
-//-(void) setGameMode:(EnumGameMode)gameMode;
 
 -(void) render;
+-(void) renderLevel;
+-(void) doAI;
+-(void) doPhysics;
+
 
 @end

@@ -12,20 +12,23 @@
 @implementation GameEngine
 
 @synthesize gameMode;
+@synthesize elapsed;
 
-NSArray* friendlyBulletArray;
-NSArray* enemyBulletArray;
-NSArray* enemyArray;
-Entity3d* player;
+NSMutableArray* friendlyBulletArray;
+NSMutableArray* enemyBulletArray;
+NSMutableArray* enemyArray;
+Player* player;
 EnumGameMode previousGameMode;
 
 - (id)init {
     self = [super init];
     if (self) {
-        player = [[Entity3d alloc] init];
+        player = [[Player alloc] init];
         
         self.gameMode = gmSplashScreen;
         previousGameMode = self.gameMode;
+        
+        self.elapsed = 0;
     }
     return self;
 } 
@@ -36,35 +39,48 @@ EnumGameMode previousGameMode;
             
         case gmSplashScreen:
             glClearColor(1, 0, 0, 0);
+            glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
             break;
             
         case gmMainMenu:
             glClearColor(0, 1, 0, 0);
+            glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
             break;
             
         case gmLevelIntro:
             glClearColor(0, 0, 1, 0);
+            glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
             break;
             
         case gmLevelInPlay:
-           // renderLevel;
+            [self doAI];
+            [self doPhysics];
+            [self renderLevel];
             break;
             
         case gmLevelCompleted:
             glClearColor(0, 1, 1, 0);
+            glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
             break;
             
         case gmGamePaused:
-            glClearColor(1, 1, 1, 0);
+            self.elapsed = 0;
+            [self renderLevel];
+            //TODO: overlay a transparent black rectangle over the screen to show that the game is paused
+            //TODO: print "GAME PAUSED" over the screen
+            //TODO: Pause the music (when there is a jukebox object
             break;
-            
     }    
     
-    glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 }
 
 -(void) renderLevel
 {
+    glClear( GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT );
+    //glLoadIdentity();   // Reset the current modelview matrix
+   
+    [player Draw];
+    
     /*
      // Upload the texture
      // Since we are sharing OpenGL objects between the full-screen and non-fullscreen contexts, we only need to do this once
@@ -111,5 +127,18 @@ EnumGameMode previousGameMode;
      glBindTexture(GL_TEXTURE_2D, 0);
      */
 }
+
+-(void) doAI
+{
+    [player DoAI:elapsed];
+    
+}
+
+-(void) doPhysics
+{
+    [player DoPhysics:elapsed];
+}
+
+
 
 @end

@@ -15,12 +15,18 @@
 
 }
 
+@property struct Vector3f position;
+@property struct Vector3f rotation;
+
 -(void) Draw;
 -(void) DoAI: (double) elapsed;
+-(void) DoPhysics:(double)elapsed;
+
 
 -(void) setPosition: (float) x: (float) y: (float)z;
 -(void) Move: (float) x: (float) y: (float)z;
 -(void) setRotation: (float) angleX: (float) angleY: (float) angleZ;
+-(void) rotateBy: (float) angleX: (float) angleY: (float) angleZ;
 
 
 @end

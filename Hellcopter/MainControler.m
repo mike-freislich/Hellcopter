@@ -300,27 +300,29 @@
             break;
 			
             
-        case '1':
+        case '0':
             scene.gameEngine.gameMode = gmSplashScreen;
             break;
             
-        case '2':
+        case 'H':
+        case 'h':
            scene.gameEngine.gameMode = gmMainMenu;
             break;
             
-        case '3':
+        case '1':
             scene.gameEngine.gameMode = gmLevelIntro;
             break;
             
-        case '4':
+        case '2':
             scene.gameEngine.gameMode = gmLevelInPlay;
             break;
             
-        case '5':
+        case '3':
             scene.gameEngine.gameMode = gmLevelCompleted;
             break;
             
-        case '6':
+        case 'p':
+        case 'P':
             scene.gameEngine.gameMode = gmGamePaused;    
             break;
             
@@ -332,6 +334,7 @@
 // Holding the mouse button and dragging the mouse changes the "roll" angle (y-axis) and the direction from which sunlight is coming (x-axis).
 - (void)mouseDown:(NSEvent *)theEvent
 {
+    /*
     BOOL dragging = YES;
     NSPoint windowPoint;
     NSPoint lastWindowPoint = [theEvent locationInWindow];
@@ -379,6 +382,7 @@
         [self startAnimation];
         renderTime = CFAbsoluteTimeGetCurrent();
     }
+     */
 }
 
 @end
