@@ -10,9 +10,5 @@
 
 @interface Player : Entity3d
 
-
--(void) Draw;
--(void) DoAI: (double) elapsed;
--(void) DoPhysics:(double)elapsed;
-
+ 
 @end
