@@ -7,6 +7,7 @@
 //
 
 #import "GameEngine.h"
+#import "Terrain.h"
 #import <OpenGL/gl.h>
 
 @implementation GameEngine
@@ -17,6 +18,8 @@
 NSMutableArray* friendlyBulletArray;
 NSMutableArray* enemyBulletArray;
 NSMutableArray* enemyArray;
+
+Terrain* terrain;
 Player* player;
 EnumGameMode previousGameMode;
 
@@ -29,30 +32,40 @@ EnumGameMode previousGameMode;
         previousGameMode = self.gameMode;
         
         self.elapsed = 0;
+        
+        terrain = [[Terrain alloc] init];
+        [terrain LoadHeightMapFromRAW];
     }
     return self;
 } 
 
 -(void) render
 {
+    glEnable(GL_DEPTH_TEST);
+	//glEnable(GL_CULL_FACE);
+	glEnable(GL_LIGHTING);
+	glEnable(GL_LIGHT0);
+	glEnable(GL_TEXTURE_2D);
+    
     switch (gameMode) {
             
         case gmSplashScreen:
             glClearColor(1, 0, 0, 0);
-            glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
+                glClear( GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT );
             break;
             
         case gmMainMenu:
             glClearColor(0, 1, 0, 0);
-            glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
+                glClear( GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT );
             break;
             
         case gmLevelIntro:
             glClearColor(0, 0, 1, 0);
-            glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
+            glClear( GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT );
             break;
             
         case gmLevelInPlay:
+            glClearColor(1, 1, 1, 0);
             [self doAI];
             [self doPhysics];
             [self renderLevel];
@@ -60,7 +73,6 @@ EnumGameMode previousGameMode;
             
         case gmLevelCompleted:
             glClearColor(0, 1, 1, 0);
-            glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
             break;
             
         case gmGamePaused:
@@ -77,9 +89,10 @@ EnumGameMode previousGameMode;
 -(void) renderLevel
 {
     glClear( GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT );
-    //glLoadIdentity();   // Reset the current modelview matrix
-   
-    [player Draw];
+    glLoadIdentity();
+    [player Draw];   
+    
+    [terrain Draw];    
     
     /*
      // Upload the texture

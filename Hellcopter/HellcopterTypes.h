@@ -25,3 +25,8 @@ struct Vector3i {
     GLint y;
     GLint z;
 };
+
+struct TextureCoords2f {
+    GLfloat u;
+    GLfloat v;
+};

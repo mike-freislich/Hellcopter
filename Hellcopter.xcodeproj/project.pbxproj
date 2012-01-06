@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7718BBCE14B6E36E00F80024 /* Terrain.m in Sources */ = {isa = PBXBuildFile; fileRef = 7718BBCD14B6E36E00F80024 /* Terrain.m */; };
 		777152EB14A32DDF008C0025 /* Sprite.m in Sources */ = {isa = PBXBuildFile; fileRef = 777152EA14A32DDF008C0025 /* Sprite.m */; };
 		779EE3B714A07F8400C84FE0 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 779EE3B614A07F8400C84FE0 /* Cocoa.framework */; };
 		779EE3C114A07F8400C84FE0 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 779EE3BF14A07F8400C84FE0 /* InfoPlist.strings */; };
@@ -40,6 +41,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7718BBCC14B6E36E00F80024 /* Terrain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Terrain.h; sourceTree = "<group>"; };
+		7718BBCD14B6E36E00F80024 /* Terrain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Terrain.m; sourceTree = "<group>"; };
 		777152E914A32DDF008C0025 /* Sprite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Sprite.h; sourceTree = "<group>"; };
 		777152EA14A32DDF008C0025 /* Sprite.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Sprite.m; sourceTree = "<group>"; };
 		779EE3B214A07F8400C84FE0 /* Hellcopter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Hellcopter.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -223,6 +226,8 @@
 				77A82A1114A4C42F00960B01 /* IPhysics.h */,
 				77A82A1214A4C8F800960B01 /* GameEngine.h */,
 				77A82A1314A4C8F800960B01 /* GameEngine.m */,
+				7718BBCC14B6E36E00F80024 /* Terrain.h */,
+				7718BBCD14B6E36E00F80024 /* Terrain.m */,
 			);
 			name = Engine;
 			sourceTree = "<group>";
@@ -345,6 +350,7 @@
 				77A82A1014A4C0BE00960B01 /* Entity3d.m in Sources */,
 				77A82A1414A4C8F800960B01 /* GameEngine.m in Sources */,
 				77F2C5A514B48DDE008115B6 /* Player.m in Sources */,
+				7718BBCE14B6E36E00F80024 /* Terrain.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

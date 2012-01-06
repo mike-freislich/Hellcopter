@@ -51,16 +51,8 @@ GameEngine * gameEngine;
     return gameEngine;
 }
 
-
 - (void)render
 {		
-	glEnable(GL_DEPTH_TEST);
-	//glEnable(GL_CULL_FACE);
-	glEnable(GL_LIGHTING);
-	glEnable(GL_LIGHT0);
-	glEnable(GL_TEXTURE_2D);
-
-    glClearColor(0, 0, 0.2, 0);
     
     [gameEngine render];
     
