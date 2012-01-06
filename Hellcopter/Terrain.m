@@ -12,13 +12,13 @@
 
 @implementation Terrain
 
-const int MAP_MAXX=200, MAP_MAXY=200;
+const int MAP_MAXX=100, MAP_MAXY=100;
 int elevationMap[MAP_MAXX][MAP_MAXY];
 int vertexCount;
 
 struct TextureCoords2f* texCoords = nil;
 struct Vector3f* vertices = nil;
-
+float rotation = 0;
 
 -(void) LoadHeightMapFromRAW //: (NSString *) filename
 {
@@ -26,8 +26,8 @@ struct Vector3f* vertices = nil;
     {
         for (int y = 0; y < MAP_MAXY; y ++)
         {
-            int z = rand() % 256;
-            elevationMap[x][y] = z + 1;
+            int z = rand() % 30;
+            elevationMap[x][y] = z;
         }
     }
  
@@ -61,7 +61,7 @@ struct Vector3f* vertices = nil;
                 // Set The Data, Using PtHeight To Obtain The Y Value
                 vertices[index].x = flx - (width / 2);
                 vertices[index].z = flz - (height / 2);
-                vertices[index].y = (float)elevationMap[x][z] / 256.0f;
+                vertices[index].y = (float)elevationMap[x][z] / 100;
                 
                 // Stretch The Texture Across The Entire Mesh
                 texCoords[index].u = flx / width;
@@ -74,21 +74,28 @@ struct Vector3f* vertices = nil;
     }
 }
 
+-(void) RotateBy: (float) angleDelta
+{
+    rotation += angleDelta;
+}
+
 -(void) Draw
 {
     glLoadIdentity();
-    //2glPolygonMode( GL_FRONT_AND_BACK, GL_LINE );
+    //glPolygonMode( GL_FRONT_AND_BACK, GL_LINE );
 
-    glTranslatef( 0.0f, -10.0f, -10.0f );
-    glRotatef( 15.0f, 1.0f, 0.0f, 0.5f );
+    glTranslatef( 0.0f, -10.0f, -50.0f );
+    glRotatef(rotation, 0.25f, 1.0f, 0.75f );
    
     // Draw without Vertex Buffer Objects (slow and simple to start)
     glEnableClientState( GL_VERTEX_ARRAY );               
     glEnableClientState( GL_TEXTURE_COORD_ARRAY ); 
+    
     glVertexPointer( 3, GL_FLOAT, 0, vertices ); 
     glTexCoordPointer( 2, GL_FLOAT, 0, texCoords );
     glDrawArrays( GL_TRIANGLES, 0, vertexCount );
-    glDisableClientState( GL_VERTEX_ARRAY );                // Disable Vertex Arrays
+    
+    glDisableClientState( GL_VERTEX_ARRAY );                
     glDisableClientState( GL_TEXTURE_COORD_ARRAY );  
 }
 

@@ -16,5 +16,6 @@
 -(void) LoadHeightMapFromRAW; //: (NSString *) filename;-(void) ComputeValues: (int) width: (int) height;
 -(void) LoadVertexBuffer;
 -(void) Draw;
+-(void) RotateBy: (float) angle;
 
 @end

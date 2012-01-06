@@ -92,6 +92,7 @@ EnumGameMode previousGameMode;
     glLoadIdentity();
     [player Draw];   
     
+    [terrain RotateBy: (elapsed * 10.0f)];
     [terrain Draw];    
     
     /*
