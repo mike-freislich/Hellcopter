@@ -25,8 +25,9 @@
 
 -(void) setPosition: (float) x: (float) y: (float)z;
 -(void) Move: (float) x: (float) y: (float)z;
+
 -(void) setRotation: (float) angleX: (float) angleY: (float) angleZ;
--(void) rotateBy: (float) angleX: (float) angleY: (float) angleZ;
+-(void) Rotate: (float) angleX: (float) angleY: (float) angleZ;
 
 
 @end

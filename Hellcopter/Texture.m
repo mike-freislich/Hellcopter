@@ -51,7 +51,6 @@
 		free(data);
 		return NO;
 	}
-	
 	image = CGImageSourceCreateImageAtIndex(src, 0, NULL);
 	CFRelease(src);
 	

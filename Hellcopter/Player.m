@@ -11,13 +11,18 @@
 
 @implementation Player
 
+-(id) init
+{
+    [super init];
+    [self setPosition:0: 0: -6];
+    
+    return self;
+}
+
 -(void) Draw
 {
-    glLoadIdentity();
-    glTranslatef(super.position.x, super.position.y, super.position.z);
-    glRotatef(super.rotation.x, 1.0, 0.0, 0.0);
-    glRotatef(super.rotation.y, 0.0, 1.0, 0.0);
-    glRotatef(super.rotation.z, 0.0, 0.0, 1.0);
+    
+    [super Draw];
     
     glBegin( GL_TRIANGLES );             
     glVertex3f(  0.0f,  1.0f, 0.0f );    // Top
@@ -31,7 +36,7 @@
     [super DoAI:elapsed];
 
     float degPerSec = 30; 
-    [self rotateBy:degPerSec * elapsed :0.0f :0.0f];
+    [self Rotate:degPerSec * elapsed :0.0f :0.0f];
 }
 
 -(void) DoPhysics: (double) elapsed

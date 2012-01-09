@@ -27,6 +27,7 @@
 		779EE40814A0C4F700C84FE0 /* Earth.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 779EE40714A0C4F700C84FE0 /* Earth.jpg */; };
 		77A82A1014A4C0BE00960B01 /* Entity3d.m in Sources */ = {isa = PBXBuildFile; fileRef = 77A82A0F14A4C0BE00960B01 /* Entity3d.m */; };
 		77A82A1414A4C8F800960B01 /* GameEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = 77A82A1314A4C8F800960B01 /* GameEngine.m */; };
+		77B2A98C14B8A40000B05272 /* terrain.gif in Resources */ = {isa = PBXBuildFile; fileRef = 77B2A98B14B8A40000B05272 /* terrain.gif */; };
 		77F2C5A514B48DDE008115B6 /* Player.m in Sources */ = {isa = PBXBuildFile; fileRef = 77F2C5A314B48DDE008115B6 /* Player.m */; };
 /* End PBXBuildFile section */
 
@@ -79,6 +80,7 @@
 		77A82A1114A4C42F00960B01 /* IPhysics.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IPhysics.h; sourceTree = "<group>"; };
 		77A82A1214A4C8F800960B01 /* GameEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameEngine.h; sourceTree = "<group>"; };
 		77A82A1314A4C8F800960B01 /* GameEngine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameEngine.m; sourceTree = "<group>"; };
+		77B2A98B14B8A40000B05272 /* terrain.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = terrain.gif; sourceTree = "<group>"; };
 		77F2C5A314B48DDE008115B6 /* Player.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Player.m; sourceTree = "<group>"; };
 		77F2C5A414B48DDE008115B6 /* Player.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Player.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -202,6 +204,7 @@
 		779EE40914A0CA8900C84FE0 /* Textures */ = {
 			isa = PBXGroup;
 			children = (
+				77B2A98B14B8A40000B05272 /* terrain.gif */,
 				779EE40714A0C4F700C84FE0 /* Earth.jpg */,
 			);
 			name = Textures;
@@ -307,6 +310,7 @@
 				779EE3C714A07F8400C84FE0 /* Credits.rtf in Resources */,
 				779EE3CD14A07F8400C84FE0 /* MainMenu.xib in Resources */,
 				779EE40814A0C4F700C84FE0 /* Earth.jpg in Resources */,
+				77B2A98C14B8A40000B05272 /* terrain.gif in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

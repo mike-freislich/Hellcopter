@@ -19,11 +19,8 @@ float maxVelocity;
 - (id)init {
     self = [super init];
     if (self) {
-        rotation.x = 0;
-        rotation.y = 0;
-        rotation.z = 0;
-        
-        [self setPosition:0.0f :0.0f :-3.0f];
+        [self setRotation: 0: 0: 0];       
+        [self setPosition: 0: 0: 0];
     }
     return self;
 }
@@ -31,16 +28,20 @@ float maxVelocity;
 
 -(void) DoPhysics: (double) elapsed
 {
+    //TODO: base Physics here
 }
 
 -(void) DoAI: (double) elapsed
 {
-
+    //TODO: base AI here
 }
 
 -(void) Draw
 {
-
+    glTranslatef(position.x, position.y, position.z);
+    glRotatef(rotation.x, 1, 0, 0);
+    glRotatef(rotation.y, 0, 1, 0);
+    glRotatef(rotation.z, 0, 0, 1);
 }
 
 -(void) Move: (float) x: (float) y: (float)z
@@ -64,7 +65,7 @@ float maxVelocity;
     rotation.z = angleZ;
 }
 
--(void) rotateBy: (float) angleX: (float) angleY: (float) angleZ
+-(void) Rotate: (float) angleX: (float) angleY: (float) angleZ
 {
     rotation.x += angleX;
     rotation.y += angleY;

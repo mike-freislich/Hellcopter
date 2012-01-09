@@ -6,9 +6,11 @@
 //  Copyright (c) 2012 Clue. All rights reserved.
 //
 
+#import <Cocoa/Cocoa.h>
 #import <Foundation/Foundation.h>
+#import "Entity3d.h"
 
-@interface Terrain : NSObject
+@interface Terrain : Entity3d
 {
     
 }
@@ -16,6 +18,7 @@
 -(void) LoadHeightMapFromRAW; //: (NSString *) filename;-(void) ComputeValues: (int) width: (int) height;
 -(void) LoadVertexBuffer;
 -(void) Draw;
--(void) RotateBy: (float) angle;
+-(void) setMaterial;
+-(float) PointHeight: (int) x: (int) y;
 
 @end

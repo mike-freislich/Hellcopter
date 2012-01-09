@@ -28,6 +28,7 @@ typedef enum {
 -(void) renderLevel;
 -(void) doAI;
 -(void) doPhysics;
+-(void) InitLighting;
 
 
 @end

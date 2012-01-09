@@ -18,7 +18,6 @@ GameEngine * gameEngine;
     self = [super init];
     if (self) {
         gameEngine = [[GameEngine alloc] init];
-        gameEngine.gameMode = gmSplashScreen;
     } 
     return self;
 }
